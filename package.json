@@ -1,0 +1,37 @@
+{
+  "name": "cody-conversation-logger",
+  "displayName": "Cody Conversation Logger",
+  "description": "Logs Cody conversations to a file for persistent storage",
+  "version": "0.0.1",
+  "publisher": "Steve M",
+  "engines": {
+    "vscode": "^1.76.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onStartupFinished",
+    "*"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": []
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./"
+  },
+  "devDependencies": {
+    "@types/glob": "^8.1.0",
+    "@types/mocha": "^10.0.1",
+    "@types/node": "16.x",
+    "@types/vscode": "^1.76.0",
+    "typescript": "^4.9.5"
+  },
+  "dependencies": {
+    "lodash": "^4.17.21",
+    "vscode": "^1.1.37"
+  }
+}
