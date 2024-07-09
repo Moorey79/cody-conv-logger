@@ -1,3 +1,4 @@
+import { window, ExtensionContext } from 'vscode';
 import { ConversationLogger } from './utils/logger';
 import * as vscode from 'vscode';
 import { debounce } from 'lodash';
